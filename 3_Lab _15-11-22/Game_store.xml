@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+
+
+<game_store>
+    <game>
+        <name>Witcher 3 Wild Hunt</name>
+        <price>800</price>
+        <description>As war rages on throughout the Northern Realms, 
+                    you take on the greatest contract of your life — 
+                    tracking down the Child of Prophecy,
+                    a living weapon that can alter the shape of the world.
+        </description>
+        <rating>10/10</rating>
+    </game>
+</game_store>
+
+<!ELEMENT details (name, Developer, Publisher, release_date)>
+<!ELEMENT name (first, last)>
+<!ELEMENT first (#PCDATA)>
+<!ELEMENT last (#PCDATA)>
+<!ELEMENT Developer (#PCDATA)>
+<!ELEMENT Publisher (#PCDATA)>
+<!ELEMENT release_date (year, month, day)>
+<!ELEMENT year (#PCDATA)>
+<!ELEMENT month (#PCDATA)>
+<!ELEMENT day (#PCDATA)>
+
+
+<!ENTITY entity-name SYSTEM “URI/URL”>
+<!ENTITY entity-name “entity definition”>
+EG.
+<!ENTITY writer “Ken Thompson”>
+<!ENTITY copyright “Christ 2019”>
+<author > &writer;&copyright;</author>
