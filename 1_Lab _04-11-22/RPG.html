@@ -5,7 +5,7 @@
 h1 {
   color: white;
   font-family: verdana;
-  font-size: 180%;
+  font-size: 200%;
 }
 h2 {
   color: white;
@@ -20,15 +20,12 @@ h3 {
 h4 {
   color: white;
   font-family: verdana;
-  font-size: 100%;
-  text-align: top;
-  display: inline;
+  font-size: 70%;
 }
 p {
   color: white;
   font-family: verdana;
   font-size: 100%;
-  
 }
 .btn {
 	cursor: pointer;
@@ -36,22 +33,64 @@ p {
     background-color: transparent;
    	height: 50px;
 	width: 200px;
-    color: #3498db;
+    color: #ffffff;
     font-size: 1.5em;
     box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6);
 }
 
-.btn1 {
+.btni {
 	cursor: pointer;
 	border: 1px solid #3498db;
     background-color: #10b320;
     color: white;
     font-size: 100%;
+	font-family: Garamond, serif;
+	box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6);
 }
+
+.btnj {
+	cursor: pointer;
+	border: 1px solid #2f00ff;
+	color: #ffffff;
+    background-color: #10b320;
+	height: 25px;
+	width: 80px;
+	font-size: 100%;
+	font-family: Garamond, serif;
+	box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6);
+}
+.btnk {
+	cursor: pointer;
+	border: 1px solid #2f00ff;
+	color: #000000;
+    background-color: #fbff00;
+	font-size: 100%;
+	font-family: 'Brush Script MT', cursive;
+	box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6);
+}
+
+.btnh1:hover {
+	color: #1100ff;
+	background-color: #7ff7f7;
+	opacity:0.7;
+}
+
+.btnh2:hover {
+	color: #1100ff;
+	background-color: #10b320;
+	opacity:0.7;
+}
+.btnh3:hover {
+	background-color: #000000;
+	opacity:0.7;
+}
+
+
+
 .header img{
 float:left;
-width:100px;
-height:100px;
+width:50px;
+height:50px;
 background:#555;
 }
 
@@ -60,45 +99,79 @@ sup {
     font-size: 10;
 }
 
+a:link {
+         color: rgb(0, 0, 0);
+         background-color: transparent;
+         text-decoration: none;
+      }
+      a:visited {
+         color: rgb(0, 0, 0);
+         background-color: transparent;
+         text-decoration: none;
+      }
+      a:active {
+         color: rgb(0, 0, 0);
+         background-color: transparent;
+      }
 </style>
 <title>Game_Store Action</title>
 </head>
 <body background="bg4.jpg">
-<table  border="0" width="1900" height="940">
+	<table  border="0" bordercolor="black" Cellspacing= "0" Cellpadding= "0" width="100%" height="100">
+        <col style="width:20%">
+        <col style="width:30%">
+        <col style="width:30%">
+        <col style="width:10%">
+        <col style="width:10%">
 
-	<tr>
-		<td bgcolor="black" rowspan="1" height="5px"></td>
-		<td bgcolor="black" width="5">
-			<a href="file:///C:/Users/samso/Desktop/christ/2nd%20SEM%20labs/HTML/Lab/1_Lab%20_04-11-22/static%20webpage.html">
+
+
+		<tr >
+		<td bgcolor="black"  height="5px">
+            <a href="static webpage.html">
 				<img src="RGB.jpeg" width="50" height="50" align="right" alt="logo"/></a>
-		</td>
-		<td  bgcolor="black">
-			<a href="file:///C:/Users/samso/Desktop/christ/2nd%20SEM%20labs/HTML/Lab/1_Lab%20_04-11-22/static%20webpage.html">
+        </td>
+		<td bgcolor="black" colspan="0">
+			<a href="static webpage.html">
 				<h1> Game Deck</h1></a>
 			</div>
 		</td>
+		<td  bgcolor="black"></td>
+	
+		<Td bgcolor="black">
+			<div align="middle">
+			<button type="btnhvr" class="btni btnh1" onclick="document.location='login.html'">login
+			</button>
+		</Td>
 
-    <Td bgcolor="black">
-		<div align="right">
-        <button class="btn1" onclick="document.location='login.html'">login</button>
-	</Td >
-	<td bgcolor="black">
-		<p></p>
-	</td>
-	</tr>
-    
-	<tr>
-	<td Height="1" Width= "1600" colspan="10">
-		<div align="middle">
-			<h2>Categories:
+		<td bgcolor="black"></td>
 
-				<button class="btn" onclick="document.location='Action.html'">Action</button>
-			<button class="btn" onclick="document.location='Adventure.html'">Adventure</button>
-			<button class="btn" onclick="document.location='Simulation.html'">Simulation</button>
-			<button class="btn" onclick="document.location='Racingsports.html'">Racing/Sports</button>
-	</td>
-	</tr>
+		</tr>
+        </table>
 
+		<table border="0" Cellspacing= "0" Cellpadding= "0" width="100%">
+            <col style="width:55%">
+            <col style="width:45%">
+		<tr>
+		<td width="90%" height="" >
+			<div align="middle">
+				<h2>Categories:
+				<button class="btn btnh3" onclick="document.location='Action.html'">Action</button>
+				<button class="btn btnh3" onclick="document.location='Adventure.html'">Adventure</button>
+				<button class="btn btnh3" onclick="document.location='Simulation.html'">Simulation</button>
+				<button class="btn btnh3" onclick="document.location='Racingsports.html'">Racing/Sports</button>
+        </td>
+
+		</tr>
+	</table>
+
+<br>
+<br>
+<br>
+<br>
+
+
+    <table border="0" Cellspacing= "0" Cellpadding= "0" width="100%" height="100%">
 	<tr>
 		<td colspan="10">
 			<p>
@@ -126,7 +199,7 @@ sup {
 	<IMG Src= "witcher 3.jpg" Height= "100" Width= "150" 
 		border="2" Vspace= "10" Hspace= "10" alt="image of the game"></a>
 	<td colspan="4">
-		<h2><a href="https://store.steampowered.com/app/292030/The_Witcher_3_Wild_Hunt">Witcher 3</a></h2>
+		<a href="https://store.steampowered.com/app/292030/The_Witcher_3_Wild_Hunt"><h2>Witcher 3</h2></a>
 		<p>
 			click for more details
 		</p>
@@ -141,7 +214,7 @@ sup {
 		Vspace= "10" Hspace= "10" alt="image of the game"></a>
 	</td>
 	<td colspan="4">
-		<h2><a href="https://store.steampowered.com/app/22380/Fallout_New_Vegas">Fallout New Vegas</a></h2>
+		<a href="https://store.steampowered.com/app/22380/Fallout_New_Vegas"><h2>Fallout New Vegas</h2></a>
 		<p>
 			click for more details
 		</p>
@@ -155,7 +228,7 @@ sup {
 				Vspace= "10" Hspace= "10" alt="image of the game"></a>
 	</td>
 	<td colspan="4">
-		<h2><a href="https://store.steampowered.com/app/1091500/Cyberpunk_2077/">Cyberpunk 2077</a></h2>
+		<a href="https://store.steampowered.com/app/1091500/Cyberpunk_2077/"><h2>Cyberpunk 2077</h2></a>
 		<p>
 			click for more details
 		</p>
@@ -170,16 +243,61 @@ sup {
 		Vspace= "10" Hspace= "10" alt="image of the game"></a>
 	</td>
 	<td colspan="4">
-		<h2><a href="https://store.steampowered.com/app/1245620/ELDEN_RING/">Elden Ring</a></h2>
+		<a href="https://store.steampowered.com/app/1245620/ELDEN_RING/"><h2>Elden Ring</h2></a>
 		<p>
 			click for more details
 		</p>
 	</td>
 	</tr>
+	</table>
+
+	<table border="0" Cellspacing= "1" Cellpadding= "1" width="100%" height="100%">
+		<col style="width:25%">
+		<col style="width:50%">
+		<col style="width:12%">
+		<col style="width:13%">
+	<td>
+
+	</td>
 	
-
-
-</table>
+	<td>
+		<div style = "position:relative; left:440px; top:30px;">
+			<button class="btnk btnh2"  onclick="document.location='Aboutus.html'">ABOUT US</button>
+		</div>
+	</td>
+	<td>
+		<div style="position:static; top: 27px;">
+			<p id="loki"></p>
+			<button class="btnj btnh2" onclick="getlocation()">
+				location
+			</button>
+			<script>
+				var variable1 = document.getElementById("loki");
+				function getlocation() {
+				navigator.geolocation.getCurrentPosition(showLoc);
+				}
+				function showLoc(pos) {
+				variable1.innerHTML =
+				"Latitude: " +
+				pos.coords.latitude +
+				"<br>Longitude: " +
+				pos.coords.longitude;
+				}
+			</script>
+		</div>
+	</td>
+	<td>
+		<div align="right">
+			<img src="social.jpg" usemap="#social"  width="100px" height="100px" >
+				   <map name="social">
+				   <area shape="rect" coords="0,0,50,50" href="https://www.instagram.com/">
+				   <area shape="rect" coords="50,0,200,50" href="https://www.facebook.com/">
+				   <area shape="rect" coords="0,50,50,100" href="https://web.whatsapp.com/">
+				   <area shape="rect" coords="50,50,100,100" href="https://twitter.com/">
+				   </map>
+		</div>
+	</td>
+	</table>
 
 </body>
 </html>
