@@ -1,0 +1,83 @@
+[
+  {
+    "id": 1,
+    "name": "The Witcher 3",
+    "price": 80,
+    "size": "50gb",
+    "platform": "GOG",
+    "gpu": "high",
+    "category": "Role playing"
+  },
+  {
+    "id": 2,
+    "name": "Valorant",
+    "price": "0",
+    "size": "35gb",
+    "platform": "riot",
+    "gpu": "low",
+    "category": "mutiplayer"
+  },
+  {
+    "id": 3,
+    "name": "Hogwarts Legacy",
+    "price": 40,
+    "size": "60gb",
+    "platform": "epic games",
+    "gpu": "medium",
+    "category": "Role playing"
+  },
+  {
+    "id": 4,
+    "name": "NFS Heat",
+    "price": 30,
+    "size": "32gb",
+    "platform": "steam",
+    "gpu": "high",
+    "category": "Racing"
+  },
+  {
+    "id": 5,
+    "name": "Elden Ring",
+    "price": 30,
+    "size": "45gb",
+    "platform": "steam",
+    "gpu": "high",
+    "category": "Role playing"
+  },
+  {
+    "id": 6,
+    "name": "Grand Theft Auto V",
+    "price": 30,
+    "size": "100gb",
+    "platform": "epic games",
+    "gpu": "high",
+    "category": "Adventure"
+  },
+  {
+    "id": 7,
+    "name": "FIFA 23",
+    "price": 20,
+    "size": "50gb",
+    "platform": "steam",
+    "gpu": "low",
+    "category": "Sports"
+  },
+  {
+    "id": 7,
+    "name": "FIFA 23",
+    "price": 2500,
+    "size": "50gb",
+    "color": "green",
+    "material": "cotton",
+    "category": "Sports"
+  },
+  {
+    "id": 7,
+    "name": "FIFA 23",
+    "price": 2500,
+    "size": "50gb",
+    "color": "green",
+    "material": "cotton",
+    "category": "Sports"
+  }
+]
