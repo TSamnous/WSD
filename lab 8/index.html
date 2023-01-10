@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>Home</title>
+    <link href="css file.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-route.min.js"></script>
+</head>
+<body ng-app="myapp" ng-controller="myappCtrl">
+    <table  border="0" bordercolor="black" Cellspacing= "0" Cellpadding= "0" width="100%" height="100">
+        <col style="width:20%">
+        <col style="width:30%">
+        <col style="width:30%">
+        <col style="width:10%">
+        <col style="width:10%">
+
+
+
+		<tr >
+		<td bgcolor="black"  height="5px">
+            <a href="static webpage.html">
+				<img src="RGB.jpeg" width="50" height="50" align="right" alt="logo"/></a>
+        </td>
+		<td bgcolor="black" colspan="0">
+			<a href="static webpage.html">
+				<h1> Game Deck</h1></a>
+			</div>
+		</td>
+		<td  bgcolor="black"></td>
+	
+		<Td bgcolor="black">
+			<div align="middle">
+			<button type="btnhvr" class="btni btnh1" onclick="document.location='login.html'">login
+			</button>
+			<button type="btnhvr" class="btni btnh1" onclick="document.location='register acc.html'">Register
+			</button>
+		</Td>
+
+		<td bgcolor="black"></td>
+
+		</tr>
+        </table>
+
+    <div class="d-flex justify-content-between align-items-center px-5" id="route_navbar">
+        <h1>{{var}}</h1>
+        <ul class="nav nav-tabs|pills">
+            <li class="nav-item">
+                <a href="#/home" class="nav-link active">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="#/json" class="nav-link">List</a>
+            </li>
+            <li class="nav-item disabled">
+                <a href="#/search" class="nav-link">Search</a>
+            </li>
+        </ul>
+    </div>
+
+    <ng-view></ng-view>
+
+    <script src="./home.js  "></script>
+</body>
+</html>
