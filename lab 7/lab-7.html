@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.3/angular.min.js"></script>
+    <script src="app.js"></script>
+    <link href="css file.css" rel="stylesheet">
+    <title>Lab 7: Angular</title>
+    <style>
+        * {
+            
+            box-sizing: border-box;
+            margin: 0;
+            font-family:Arial, Helvetica, sans-serif ;
+        }
+        th,td{
+            background-color: azure;
+            border: 1px solid;
+            border-collapse: collapse;
+            padding: 5px 50px 5px 100px;
+            text-align:center;
+        }
+        th {
+            background-color: blanchedalmond;
+            cursor: pointer;
+            background-color: #5898eb;
+        }
+        h1{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            color: white;
+            margin-top: 3em;
+            margin-bottom: 1em;
+            text-align: center;
+            font-size: 200%;
+        }
+        section{
+            display: flex;
+            justify-content: center;
+        }
+
+        div{
+            background-color: rgb(232, 240, 125);
+            border: 1px solid;
+            padding-top: 10px;
+        }
+/*.............................................................................*/
+
+/*.............................................................................*/
+    </style>
+</head>
+<body ng-app="lab7App" background="bg4.jpg">
+    <h1>Purcahse Confirmation</h1>
+    <section>
+    <div ng-controller="MyController">
+        No of rows: <input type="number" ng-model="limit" min="1" max={{rowLimit}}>
+        Search:<input type="search" ng-model="search" placeholder="Search Something">
+        
+        <br><br>
+
+        <table  border="0" bordercolor="black" Cellspacing= "0" Cellpadding= "2" width="100%" height="100">
+    
+            <tr>
+                <th ng-click="setBookDate()">purcahse Date &#8597;</th>
+                <th ng-click="setName()">Name &#8597;</th>
+                <th ng-click="setDob()">DOB &#8597;</th>
+                <th ng-click="setAge()">Age &#8597;</th>
+                <th ng-click="setGender()">Gender &#8597;</th>
+                
+            </tr>
+            <tr ng-repeat="data in datas | limitTo: limit | orderBy:order |filter:search">
+                <td>{{data.book_Date | date:"dd/MM/yyyy"}}</td>
+                <td>{{data.name}}</td>
+                <td>{{data.date | date:"dd/MM/yyyy"}}</td>
+                <td>{{data.date | findAge}}</td>
+                <td>{{data.gender | uppercase }}</td>
+                
+            </tr>
+        </table>
+    </div>
+</section>
+
+</body>
+</html>
